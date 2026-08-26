@@ -1,0 +1,31 @@
+
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7ED957"/>
+      <stop offset="100%" stop-color="#00BFA6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <g transform="translate(284.6,256) scale(1.15)" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <!-- وجه الساعة (الوقت) - بحجم أصغر -->
+    <circle cx="-160" cy="0" r="44" />
+
+    <!-- خطوط الساعات 12 - 3 - 6 - 9 -->
+    <path d="M -160 -44 L -160 -34" stroke-width="8" />
+    <path d="M -160 44 L -160 34" stroke-width="8" />
+    <path d="M -116 0 L -126 0" stroke-width="8" />
+    <path d="M -204 0 L -194 0" stroke-width="8" />
+
+    <!-- عقارب الساعة (أنحف من باقي خطوط الشعار) -->
+    <path d="M -160 0 L -160 -26" stroke-width="8" />
+    <path d="M -160 0 L -142 -12" stroke-width="8" />
+
+    <!-- خط النبض: أطراف أفقية بالكامل، والقمة والقاع بمنتصف الشعار تماماً -->
+    <path d="M -116 0 L -30 0 L -15 -55 L 15 65 L 30 0 L 160 0" />
+
+    <!-- خط عمودي يتعامد على نهاية النبض ليكوّن علامة + كاملة -->
+    <path d="M 130 -32 L 130 32" />
+  </g>
+</svg>
