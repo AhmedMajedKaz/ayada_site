@@ -40,8 +40,8 @@ self.addEventListener('activate', (event) => {
 // browser is closed — so the notification always shows.
 // -----------------------------------------------------------------------
 self.addEventListener('push', (event) => {
+    console.log("New Push Event");
   if (!event.data) return;
-
   let payload;
   try {
     payload = event.data.json();
@@ -72,6 +72,8 @@ self.addEventListener('push', (event) => {
 // Handle the user clicking the notification: focus an existing tab if one
 // matches, otherwise open a new one.
 self.addEventListener('notificationclick', (event) => {
+    
+    console.log("New Click Event");
   event.notification.close();
   const targetUrl = (event.notification.data && event.notification.data.click_action) || '/';
 
